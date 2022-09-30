@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="icon" href="img/caramel.png" type="image/png">
         <title>Curriculum Vitae Felice Clarissa</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -51,7 +51,7 @@
         
         <!--================Home Banner Area =================-->
         <section class="banner_area">
-            <div class="banner_inner d-flex align-items-center">
+            <div class="banner_inner d-flex align-items-center" style="background-color: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 99%)">
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="banner_content text-center">
