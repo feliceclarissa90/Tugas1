@@ -51,11 +51,11 @@
         
         <!--================Home Banner Area =================-->
         <section class="banner_area">
-            <div class="banner_inner d-flex align-items-center" style="background-color: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 99%)">
+            <div class="banner_inner d-flex align-items-center"  style="background: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 99%)">
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="banner_content text-center">
-						<h2>CONTACT</h2>
+						<h2 style="color: white">CONTACT</h2>
 						
 					</div>
 				</div>
