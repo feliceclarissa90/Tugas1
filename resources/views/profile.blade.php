@@ -41,6 +41,7 @@
 								<li class="nav-item"><a class="nav-link" href="education">Education</a>
 								<li class="nav-item"><a class="nav-link" href="experience">Experience</a>
 								<li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="lihatkrs">Lihat KRS</a></li>
 							</ul>
 						</div> 
 					</div>

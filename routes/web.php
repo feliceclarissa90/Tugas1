@@ -37,6 +37,10 @@ Route::get('contact', function () {
     return view('contact');
 });
 
+Route::get('lihatkrs', function () {
+    return view('lihatkrs');
+});
+
 Route::get('footer', function () {
     return yield('footer');
 });
