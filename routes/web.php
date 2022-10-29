@@ -41,6 +41,14 @@ Route::get('lihatkrs', function () {
     return view('lihatkrs');
 });
 
+Route::get('lihatkhs', function () {
+    return view('lihatkhs');
+});
+
 Route::get('footer', function () {
     return yield('footer');
+});
+
+Route::get('/admin', function() {
+    return view('admin');
 });

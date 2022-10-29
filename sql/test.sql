@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2022 at 11:17 AM
+-- Generation Time: Oct 29, 2022 at 10:54 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -20,6 +20,51 @@ SET time_zone = "+00:00";
 --
 -- Database: `test`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `khs`
+--
+
+CREATE TABLE `khs` (
+  `kode_khs` int(11) NOT NULL,
+  `studentID` varchar(12) NOT NULL,
+  `kode_term` varchar(6) NOT NULL,
+  `keterangan` text NOT NULL,
+  `kode_krs` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `khs`
+--
+
+INSERT INTO `khs` (`kode_khs`, `studentID`, `kode_term`, `keterangan`, `kode_krs`) VALUES
+(10001, '03081200043', '1213', '', '100000002'),
+(10002, '03081200043', '1213', '', '100000003'),
+(10003, '03081200043', '1213', '', '100000004');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `khs_detail`
+--
+
+CREATE TABLE `khs_detail` (
+  `kode_khs` int(11) NOT NULL,
+  `kode_khs_detail` int(11) NOT NULL,
+  `kode_krs_detail` varchar(15) NOT NULL,
+  `NilaiHuruf` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `khs_detail`
+--
+
+INSERT INTO `khs_detail` (`kode_khs`, `kode_khs_detail`, `kode_krs_detail`, `NilaiHuruf`) VALUES
+(10001, 2121, '10000000101', 'A'),
+(10002, 2122, '10000000102', 'A'),
+(10003, 2123, '10000000103', 'A');
 
 -- --------------------------------------------------------
 
@@ -117,7 +162,10 @@ INSERT INTO `matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`, `id_matak
 ('MK0004', 'Dasar Manajemen Keuangan Perusahaan', 3, 3),
 ('MK0003', 'Manajemen Strategis Perusahaan', 3, 4),
 ('MK0005', 'Enterprise Information Systems', 3, 5),
-('MK0006', 'Digital Marketing', 3, 6);
+('MK0006', 'Digital Marketing', 3, 6),
+('MK0007', 'Jaringan dan Keamanan Komputer', 3, 7),
+('MK0008', 'Arsitektur Perusahaan', 3, 8),
+('MK0009', 'Multimedia and the Web', 3, 9);
 
 -- --------------------------------------------------------
 
@@ -145,6 +193,18 @@ INSERT INTO `term` (`kode_term`, `tahun_ajar`, `semester`, `keterangan`) VALUES
 --
 
 --
+-- Indexes for table `khs`
+--
+ALTER TABLE `khs`
+  ADD PRIMARY KEY (`kode_khs`);
+
+--
+-- Indexes for table `khs_detail`
+--
+ALTER TABLE `khs_detail`
+  ADD PRIMARY KEY (`kode_khs_detail`);
+
+--
 -- Indexes for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
@@ -170,7 +230,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `matakuliah`
 --
 ALTER TABLE `matakuliah`
-  MODIFY `id_matakuliah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_matakuliah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
